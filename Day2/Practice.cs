@@ -462,7 +462,7 @@ namespace dotnetday2
             Console.WriteLine("Enter second number:");
             double num2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter operator (+, -, *, /):");
-            char op = Console.ReadLine()[0];
+            char op = Console.ReadLine()![0];
             double result = 0;
             switch (op)
             {

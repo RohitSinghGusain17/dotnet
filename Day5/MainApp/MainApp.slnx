@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../LoginAbs/LoginAbs.csproj" />
+  <Project Path="../MathLib/MathLib.csproj" />
+  <Project Path="../ScienceLib/ScienceLib.csproj" />
+  <Project Path="MainApp.csproj" />
+</Solution>

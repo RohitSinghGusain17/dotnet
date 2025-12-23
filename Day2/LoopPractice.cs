@@ -152,6 +152,38 @@ namespace dotnetday2
 
 
             #region  Answer 8
+            // int n = 5; // Height of the diamond
+            // // Upper part of the diamond
+            // for (int i = 1; i <= n; i++)
+            // {
+            //     // Print leading spaces
+            //     for (int j = i; j < n; j++)
+            //     {
+            //         Console.Write(" ");
+            //     }
+            //     // Print stars
+            //     for (int k = 1; k <= (2 * i - 1); k++)
+            //     {
+            //         Console.Write("*");
+            //     }
+            //     Console.WriteLine();
+            // }
+
+            // // Lower part of the diamond
+            // for (int i = n - 1; i >= 1; i--)
+            // {
+            //     // Print leading spaces
+            //     for (int j = n; j > i; j--)
+            //     {
+            //         Console.Write(" ");
+            //     }
+            //     // Print stars
+            //     for (int k = 1; k <= (2 * i - 1); k++)
+            //     {
+            //         Console.Write("*");
+            //     }
+            //     Console.WriteLine();
+            // }
             #endregion
 
 
@@ -165,16 +197,168 @@ namespace dotnetday2
 
 
             #region Answer 10
-            int secret = 7;
-            int guess;
-            do
+            // int secret = 7;
+            // int guess;
+            // do
+            // {
+            //     Console.Write("Guess the number: ");
+            //     guess = int.Parse(Console.ReadLine()!);
+            //     if (guess != secret)
+            //         Console.WriteLine("Wrong guess, try again.");
+            // } while (guess != secret);
+            // Console.WriteLine("Correct! You guessed it.");
+            #endregion
+
+
+            #region Answer 11
+            // Console.WriteLine("Enter a number:");
+            // string input = Console.ReadLine()!;
+            // int number;
+            // if (int.TryParse(input, out number))
+            // {
+            //     while (number >= 10)
+            //     {
+            //         int sum = 0;
+            //         while (number > 0)
+            //         {
+            //             sum += number % 10;
+            //             number /= 10;
+            //         }
+            //         number = sum;
+            //     }
+            //     Console.WriteLine($"The single digit result is: {number}");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Invalid input. Please enter a valid integer.");
+            // }
+            #endregion
+
+
+
+            #region Answer 12
+            // for (int i = 1; i <= 50; i++)
+            // {
+            //     if (i % 3 == 0)
+            //     {
+            //         continue;
+            //     }
+            //     Console.WriteLine(i);
+            // }
+            #endregion
+
+
+            #region Answer 13
+            // int choice;
+            // do
+            // {
+            //     Console.WriteLine("Menu:");
+            //     Console.WriteLine("1. Option 1");
+            //     Console.WriteLine("2. Option 2");
+            //     Console.WriteLine("3. Option 3");
+            //     Console.WriteLine("4. Exit");
+            //     Console.Write("Enter your choice (1-4): ");
+            //     choice = Convert.ToInt32(Console.ReadLine());
+
+            //     switch (choice)
+            //     {
+            //         case 1:
+            //             Console.WriteLine("You selected Option 1.");
+            //             break;
+            //         case 2:
+            //             Console.WriteLine("You selected Option 2.");
+            //             break;
+            //         case 3:
+            //             Console.WriteLine("You selected Option 3.");
+            //             break;
+            //         case 4:
+            //             Console.WriteLine("Exiting the program.");
+            //             break;
+            //         default:
+            //             Console.WriteLine("Invalid choice. Please try again.");
+            //             break;
+            //     }
+            //     Console.WriteLine();
+            // } while (choice != 4);
+            #endregion
+
+
+            #region Answer 14
+            // public static bool IsFactorion(int num)
+            // {
+            //     int sum = 0;
+            //     int temp = num;
+
+            //     while (temp > 0)
+            //     {
+            //         int digit = temp % 10;
+            //         sum += Factorial(digit);
+            //         temp /= 10;
+            //     }
+
+            //     return sum == num;
+            // }
+            // /// <summary>
+            // /// Calculate the factorial of a digit
+            // /// </summary>
+            // /// <param name="digit">The digit to calculate the factorial for</param>
+            // /// <returns>The factorial of the digit</returns>
+            // public static int Factorial(int digit)
+            // {
+            //     if (digit == 0 || digit == 1)
+            //         return 1;
+
+            //     int result = 1;
+            //     for (int i = 2; i <= digit; i++)
+            //     {
+            //         result *= i;
+            //     }
+            //     return result;
+            // }
+            // public static void Main(String[] args)
+            // {
+            //     int number = 145; // Example number
+            //     if (IsFactorion(number))
+            //     {
+            //         Console.WriteLine($"{number} is a factorion.");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine($"{number} is not a factorion.");
+            //     }
+            // }
+            #endregion
+
+
+            #region Answer 15
+            int target = 42;
+            bool found = false;
+
+            for (int i = 0; i < 100; i++)
             {
-                Console.Write("Guess the number: ");
-                guess = int.Parse(Console.ReadLine()!);
-                if (guess != secret)
-                    Console.WriteLine("Wrong guess, try again.");
-            } while (guess != secret);
-            Console.WriteLine("Correct! You guessed it.");
+                for (int j = 0; j < 100; j++)
+                {
+                    for (int k = 0; k < 100; k++)
+                    {
+                        int value = i * j + k;
+
+                        if (value == target)
+                        {
+                            found = true;
+                            goto Found;
+                        }
+                    }
+                }
+            }
+            Found:
+            if (found)
+            {
+                Console.WriteLine("Target found!");
+            }
+            else
+            {
+                Console.WriteLine("Target not found.");
+            }
             #endregion
         }
     }

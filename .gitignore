@@ -2,3 +2,6 @@ bin/
 obj/
 
 .vs/
+
+dotnetday2.csproj
+dotnetday2.csproj.user

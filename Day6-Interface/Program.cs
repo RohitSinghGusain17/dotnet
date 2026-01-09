@@ -29,7 +29,12 @@ namespace Day6
             Semester semester = new Semester();
             semester.Number = 3;
             Exam exam = new Exam();
-            exam.Subject = "Data Structures";
+            Console.WriteLine("Enter subject: ");
+            string ? subject = Console.ReadLine();
+            exam.Subject = subject;
+            Console.WriteLine("Enter date: ");
+            string ? date = Console.ReadLine();
+            exam.Date = date;
             exam.semester = semester;
             hod.ScheduleExam(semester, exam);
             hod.AssignExaminer(examiner, exam);

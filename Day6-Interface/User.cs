@@ -33,7 +33,7 @@ namespace Day6
 
         public void ScheduleExam(Semester semester, Exam exam)
         {
-            Console.WriteLine($"Exam for {exam.Subject} in Semester {semester.Number} has been scheduled by HOD {Name}");
+            Console.WriteLine($"Exam for {exam.Subject} in Semester {semester.Number} has been scheduled by HOD {Name} on {exam.Date}");
         }
 
         public void AssignExaminer(Examiner examiner, Exam exam)

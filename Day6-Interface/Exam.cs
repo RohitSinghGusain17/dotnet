@@ -5,5 +5,6 @@ namespace Day6
         public string? Subject;
         public Semester? semester;
         public Examiner? AssignedExaminer;
+        public string? Date;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 namespace Day10
 {
     public class Program
@@ -58,11 +59,10 @@ namespace Day10
 
             
             #region 
-            MyCollection m = new MyCollection();
-            Console.WriteLine(m.Add(12));
-            Console.WriteLine(m.Add(102));
-            Console.WriteLine(m.Add(121));
-
+            // MyCollection m = new MyCollection();
+            // Console.WriteLine(m.Add(12));
+            // Console.WriteLine(m.Add(102));
+            // Console.WriteLine(m.Add(121));
             #endregion
         }
     }

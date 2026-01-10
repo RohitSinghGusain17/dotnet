@@ -36,7 +36,7 @@ public class Program
         #endregion
 
 
-        #region Question 1
+        #region Question 1 (Person Details)
         // IList<Person> p = new List<Person>();
         // p.Add(new Person {Name = "Aarya", Address = "A2101", Age = 69});
         // p.Add(new Person {Name = "Daniel", Address="D104", Age = 40});
@@ -46,6 +46,30 @@ public class Program
         // Console.WriteLine(obj.GetName(p));
         // Console.WriteLine(obj.Average(p));
         // Console.WriteLine(obj.Max(p));
+        #endregion
+
+
+        #region Question 2 (Method overloading)
+        // Source s =new Source();
+        // Console.WriteLine(s.Add(1,2,3));
+        // Console.WriteLine(s.Add(1.2,1.3,1.3));
+        #endregion
+
+
+        #region Question 3 (PrepareBill)
+        // var commodities = new List<Commodity>()
+        // {new Commodity(CommodityCategory.Furniture,"Bed", 2, 50000),
+        // new Commodity(CommodityCategory.Grocery,"Flour", 5, 80),
+        // new Commodity(CommodityCategory.Service,"Insurance", 8, 8500)
+        // };
+        
+        // var prepareBill = new PrepareBill();
+        // prepareBill.SetTaxRates (CommodityCategory.Furniture,18);
+        // prepareBill.SetTaxRates (CommodityCategory.Grocery,5);
+        // prepareBill.SetTaxRates(CommodityCategory.Service,12);
+
+        // var billAmount=prepareBill.CalculateBillAmount (commodities);
+        // Console.WriteLine($"{billAmount}");
         #endregion
 
 
@@ -60,5 +84,5 @@ public class Program
         //     Console.WriteLine(i.StudentId+" "+i.StudentName+" "+i.CourseName);
         // }
         #endregion
-    }
+    }   
 }

@@ -31,32 +31,33 @@ public class MeditationCenter
 
     public int CalculateYogaFee(int memberid)
     {
+        int result=0;
         foreach(MeditationCenter i in memberList)
         {
-            if(i.MemberId == memberid)
+            if (i.MemberId == memberid)
             {
                 i.BMI = i.Weight / (i.Height * i.Height);
                 if(i.Goal=="Weight Loss")
                 {
                     if(i.BMI>=25 && i.BMI < 30)
                     {
-                        return 2000;
+                        result = 2000;
                     }
                     else if(i.BMI>=30 && BMI < 35)
                     {
-                        return 2500;
+                        result = 2500;
                     }
                     else if (i.BMI >= 35)
                     {
-                        return 3000;
+                        result = 3000;
                     }
                 }
                 else
                 {
-                    return 2500;
+                    result = 2500;
                 }
             }
         }
-        return 0;
+        return result;
     }
 }

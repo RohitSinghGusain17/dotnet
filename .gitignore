@@ -2,6 +2,7 @@ bin/
 obj/
 
 .vs/
+.vscode/
 
 dotnetday2.csproj
 dotnetday2.csproj.user

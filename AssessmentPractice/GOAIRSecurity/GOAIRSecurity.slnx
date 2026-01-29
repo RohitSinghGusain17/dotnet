@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/AssessmentPractice/">
+    <Project Path="AssessmentPractice/GOAIRSecurity/GOAIRSecurity.csproj" />
+    <Project Path="AssessmentPractice/ShopValidator/ShopValidator.csproj" />
+  </Folder>
+</Solution>

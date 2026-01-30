@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Day22/">
+    <Project Path="Day22/DataFilter/DataFilter.csproj" />
+    <Project Path="Day22/NotificationDispatcher/NotificationDispatcher.csproj" />
+    <Project Path="Day22/Student/Student.csproj" />
+  </Folder>
+</Solution>

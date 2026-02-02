@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/AssessmentPractice/">
+    <Project Path="AssessmentPractice/MovieTheater/MovieTheater.csproj" />
+    <Project Path="AssessmentPractice/StudentGradeManagement/StudentGradeManagement.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/AssessmentPractice/" />
+  <Folder Name="/AssessmentPractice/ExceptionHandling/">
+    <Project Path="AssessmentPractice/ExceptionHandling/ExceptionPropagation/ExceptionPropagation.csproj" />
+  </Folder>
+</Solution>

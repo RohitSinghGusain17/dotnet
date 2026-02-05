@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/AssessmentPractice/">
+    <Project Path="AssessmentPractice/HotelRoom/HotelRoom.csproj" />
+    <Project Path="AssessmentPractice/LibraryManagementBasic/LibraryManagementBasic.csproj" />
+  </Folder>
+</Solution>

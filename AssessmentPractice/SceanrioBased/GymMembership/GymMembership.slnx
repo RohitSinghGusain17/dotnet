@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/AssessmentPractice/" />
+  <Folder Name="/AssessmentPractice/SceanrioBased/">
+    <Project Path="AssessmentPractice/SceanrioBased/GymMembership/GymMembership.csproj" />
+  </Folder>
+</Solution>

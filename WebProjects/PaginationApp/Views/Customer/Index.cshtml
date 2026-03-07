@@ -1,0 +1,32 @@
+﻿@model List<PaginationApp.Models.Customer>
+
+<h2>Customer List</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Customer ID</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+    </tr>
+
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.CustomerID</td>
+            <td>@c.FirstName</td>
+            <td>@c.LastName</td>
+        </tr>
+    }
+
+</table>
+
+<div style="margin-top:20px">
+
+    @if (ViewBag.Page > 1)
+    {
+        <a class="btn" href="/Customer/Index?page=@(ViewBag.Page - 1)">Previous</a>
+    }
+
+    <a class="btn" href="/Customer/Index?page=@(ViewBag.Page + 1)">Next</a>
+</div>

@@ -1,0 +1,30 @@
+﻿@model List<LibraryApp.Models.Book>
+
+<h2>Book List</h2>
+
+<a href="/Book/Create">Add New Book</a>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.BookId</td>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.Price</td>
+            <td>
+                <a href="/Book/Details/@book.BookId">Details</a> |
+                <a href="/Book/Delete/@book.BookId">Delete</a>
+            </td>
+        </tr>
+    }
+
+</table>
